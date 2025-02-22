@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza italienne</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="pizza">
+            <div class="gallery">
+                <img src="./images/italy.jpeg" alt="" id="pizzaImg">
+                <!-- a la fin pour le contol d'image -->
+                 <div class="controle">
+                    <span class="btn active"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                 </div>
+            </div>
+            <div class="details">
+                <h1>Pizza italienne</h1>
+                <h2>$7</h2>
+                <p>La pizza italienne est une délicieuse version de pizza à la fois saine et succulente. La croûte, fine mais de consistance moelleuse, est l’un des éléments essentiels de ce plat. La croûte est étirée à la main et cuite à haute température pour obtenir une qualité irréprochable.
+                    La sauce est le deuxième élément le plus important de la pizza italienne, fabriquée à partir de tomates italiennes pelées. La sauce tomate n’est pas cuite avec les autres ingrédients. Au contraire, elle reste fraîche et refroidie sur le dessus. La pizza est ensuite arrosée d’huile d’olive pour en relever les saveurs. 
+                    Cette pizza comporte des garnitures uniques que l’on trouve rarement dans d’autres types de pizza. Cela comprend des citrouilles, des artichauts, des truffes et des câpres salées. Lorsque vous dégustez cette pizza, il est essentiel de se rappeler que sa saveur ne ressemble à aucune autre pizza que vous avez essayée auparavant. 
+                     </p>
+                <form >
+                    <div class="quantite">
+                        <p>Nombre</p>
+                        <input type="number" value="1">
+                    </div>
+                    <button>Acheter maintenant</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<script>
+    let pizzaImg = document.getElementById("pizzaImg")
+    let btn = document.getElementsByClassName("btn")
+
+btn[0].onclick = function(){
+    pizzaImg.src = "./images/italy.jpegg"
+}
+btn[1].onclick = function(){
+    pizzaImg.src = "./images/itly.jpeg"
+}
+// btn[2].onclick = function(){
+//     pizzaImg.src = "./images/Buffalo Chicken Pizza.jpeg"
+// }
+
+</script>
+
+</body>
+</html>

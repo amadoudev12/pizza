@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza californienne</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="pizza">
+            <div class="gallery">
+                <img src="./images/California-Style Wild Mushroom Pizza.jpeg" alt="" id="pizzaImg">
+                <!-- a la fin pour le contol d'image -->
+                 <!-- <div class="controle">
+                    <span class="btn active"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                 </div> -->
+            </div>
+            <div class="details">
+                <h1>Pizza californienne</h1>
+                <h2>$7</h2>
+                <p>Ce type de pizza est aussi satisfaisant que les autres plats associés à Buffalo. Elle se compose tout d’abord d’une croûte en forme de bombe carbonique, une création épaisse et huileuse similaire à la focaccia. Elle est ensuite recouverte d’une sauce rouge douce et d’une bonne quantité de fromage.La pizza californienne a été introduite dans les années 1980 et est fabriquée à partir de produits frais, locaux ou de saison. La pizza californienne se caractérise par une croûte mince, et ses garnitures peuvent varier. La Californie est connue pour ses choix alimentaires écologiques, et la pizza californienne ne fait pas exception. Ce style de pizza est difficile à imiter. Cependant, une fois que vous aurez trouvé les bons ingrédients, vous tomberez amoureux de la pizza californienne. </p>
+                <form >
+                    <div class="quantite">
+                        <p>Nombre</p>
+                        <input type="number" value="1">
+                    </div>
+                    <button>Acheter maintenant</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<script>
+    let pizzaImg = document.getElementById("pizzaImg")
+    let btn = document.getElementsByClassName("btn")
+
+btn[0].onclick = function(){
+    pizzaImg.src = "./images/California-Style Wild Mushroom Pizza.jpeg"
+}
+btn[1].onclick = function(){
+    pizzaImg.src = "./images/Fahrenheit 375, Californian chicken pizzag"
+}
+// btn[2].onclick = function(){
+//     pizzaImg.src = "./images/Buffalo Chicken Pizza.jpeg"
+// }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detroit  Pizza</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="pizza">
+            <div class="gallery">
+                <img src="./images/Buffalo Chicken Pizza.jpeg" alt="" id="pizzaImg">
+                <!-- a la fin pour le contol d'image -->
+                 <div class="controle">
+                    <span class="btn active"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                 </div>
+            </div>
+            <div class="details">
+                <h1>Detroit  Pizza</h1>
+                <h2>$7</h2>
+                <p>Ce qui rend Détroit unique, c’est que ses saveurs reflètent son esprit industriel. La pizza de Détroit a été inventée lorsque le propriétaire de la taverne, Gus Guerra, a utilisé quelques plateaux en acier récupérés dans l’usine automobile voisine pour s’essayer à la pizza sicilienne. Le résultat fut une pizza que l’on ne trouvait nulle part ailleurs. Elle est cuite dans l’équivalent pour la pizza de la poêle en fonte et se caractérise par l’utilisation du fromage Wisconsin et d’une croûte épaisse.
+                    Vous pouvez trouver des pizzas de Détroit dans divers restaurants en Amérique. La vraie pizza doit être préparée dans une poêle en acier finement enduite d’huile. L’épaisse croûte à pizza de style sicilien est ensuite placée dans la poêle et recouverte de sauce et de garniture. L’ensemble est ensuite cuit jusqu’à ce que le fromage fonde et caramélise sur les parois de la poêle.
+                    Le secret pour préparer une délicieuse pizza de Détroit est de préparer la pâte la veille. Cette méthode de cuisson crée une texture de fromage croustillante et délicieuse qui complète la pâte moelleuse de la pizza. C’est un délice agréable à déguster par temps froid, après une journée chaotique où votre estomac a besoin d’être rassasié. Avec un peu de patience, vous apprendrez à cuisiner une pizza de Détroit qui vous transportera dans un nouveau monde !
+                     </p>
+                <form >
+                    <div class="quantite">
+                        <p>Nombre</p>
+                        <input type="number" value="1">
+                    </div>
+                    <button>Acheter maintenant</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<script>
+    let pizzaImg = document.getElementById("pizzaImg")
+    let btn = document.getElementsByClassName("btn")
+
+btn[0].onclick = function(){
+    pizzaImg.src = "./images/Buffalo Chicken Pizza.jpeg"
+}
+btn[1].onclick = function(){
+    pizzaImg.src = "./images/buffalo.jpeg"
+}
+btn[2].onclick = function(){
+    pizzaImg.src = "./images/Buffalo Chicken Pizza.jpeg"
+}
+
+</script>
+
+</body>
+</html>

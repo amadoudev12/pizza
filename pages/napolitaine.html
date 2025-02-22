@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza napolitaine</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="pizza">
+            <div class="gallery">
+                <img src="./images/napoli.jpeg" alt="" id="pizzaImg">
+                <!-- a la fin pour le contol d'image -->
+                 <div class="controle">
+                    <span class="btn active"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                 </div>
+            </div>
+            <div class="details">
+                <h1>Pizza napolitaine</h1>
+                <h2>$7</h2>
+                <p>Vous pouvez reconnaître la pizza napolitaine à la couleur de la croûte de la pizza. Elle est fine, et le centre de la pizza est spongieux. De plus, le fromage mozzarella frais sur le dessus la fait fondre dans la bouche. Que vous le croyiez ou non, la façon traditionnelle de préparer la pizza napolitaine a été reconnue par l’UNESCO. L’Association de la pizza napolitaine, également connue sous le nom d’Associazione Verace Pizza Napoletana, a le droit de certifier les restaurants du monde entier qui respectent l’authentique pizza de style Napolitaine. </p>
+                <form >
+                    <div class="quantite">
+                        <p>Nombre</p>
+                        <input type="number" value="1">
+                    </div>
+                    <button>Acheter maintenant</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<script>
+    let pizzaImg = document.getElementById("pizzaImg")
+    let btn = document.getElementsByClassName("btn")
+
+btn[0].onclick = function(){
+    pizzaImg.src = "./images/naplle.jpeg"
+}
+btn[1].onclick = function(){
+    pizzaImg.src = "./images/napoli.jpeg"
+}
+// btn[2].onclick = function(){
+//     pizzaImg.src = "./images/Buffalo Chicken Pizza.jpeg"
+// }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza grecque</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="pizza">
+            <div class="gallery">
+                <img src="./images/greque.jpeg" alt="" id="pizzaImg">
+                <!-- a la fin pour le contol d'image -->
+                 <div class="controle">
+                    <span class="btn active"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                 </div>
+            </div>
+            <div class="details">
+                <h1>Pizza grecque</h1>
+                <h2>$7</h2>
+                <p>La pizza grecque n’a pas grand-chose à voir avec la Grèce. Elle est plutôt associée aux immigrants de Grèce en Nouvelle-Angleterre, qui ont popularisé ce style de pizza dans cette région. La particularité de cette pizza est l’huile d’olive. Lors de sa préparation, l’huile d’olive est ajoutée à la croûte de la pizza et étalée sur toute la surface de la poêle.
+                    Si vous ne supportez pas l’huile d’olive pour une raison quelconque, cette pizza n’est pas pour vous. Cependant, si vous êtes amateur de pizza, vous serez téléporté dans un autre univers après avoir consommé les riches saveurs de cette pizza. L’ajout généreux d’huile d’olive sur la croûte à pizza la rend plus croustillante et plus grasse que la pizza napolitaine. De plus, elle est cuite dans un four en briques ou électrique. Cela l’empêche d’avoir la carbonisation que l’on trouve généralement sur les pizzas et les tartes cuites au feu de bois.
+                     </p>
+                <form >
+                    <div class="quantite">
+                        <p>Nombre</p>
+                        <input type="number" value="1">
+                    </div>
+                    <button>Acheter maintenant</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<script>
+    let pizzaImg = document.getElementById("pizzaImg")
+    let btn = document.getElementsByClassName("btn")
+
+btn[0].onclick = function(){
+    pizzaImg.src = "./images/greque.jpeg"
+}
+btn[1].onclick = function(){
+    pizzaImg.src = "./images/Pizza à la grecque.jpeg"
+}
+btn[2].onclick = function(){
+    pizzaImg.src = "./images/Buffalo Chicken Pizza.jpeg"
+}
+
+</script>
+
+</body>
+</html>
